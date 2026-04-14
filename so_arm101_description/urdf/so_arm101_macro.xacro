@@ -672,7 +672,7 @@
       <parent link="${prefix}gripper_link" />
       <child link="${prefix}jaw_link" />
       <axis xyz="0 0 1" />
-      <limit effort="10" velocity="10" lower="0.0" upper="1." />
+      <limit effort="10" velocity="10" lower="0.0" upper="1.70" />
     </joint>
 
     <transmission name="${prefix}gripper_trans">
