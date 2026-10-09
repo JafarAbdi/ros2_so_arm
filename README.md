@@ -119,3 +119,15 @@ ros2 launch so_arm_gz so_arm_gz_bringup.launch.py arm_id:=so_arm101 # or amr_id:
 
 > [!TIP]
 > See [so_arm_gz/README.md](so_arm_gz/README.md) for all configuration options.
+
+### Joint Zero Calibration
+
+Measure how far each joint's reading is from the description's angle, by touching dots on the
+table with the arm's tips, and fold the offsets into the URDF:
+
+```bash
+ros2 run so_arm_calibration calibrate_zeros --port /dev/ttyACM0 --release
+```
+
+> [!TIP]
+> See [so_arm_calibration/README.md](so_arm_calibration/README.md) for the procedure.

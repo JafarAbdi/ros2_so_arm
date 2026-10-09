@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<package format="3">
+  <name>so_arm_calibration</name>
+  <version>0.0.0</version>
+  <description>
+    Joint zero calibration for the SO-ARM101
+    (https://github.com/TheRobotStudio/SO-ARM100): each joint's offset from
+    its description, measured by touching dots on the table, folded into the URDF
+  </description>
+  <maintainer email="jafar.uruc@gmail.com">Jafar Uruc</maintainer>
+  <license>BSD</license>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-scipy</exec_depend>
+  <exec_depend>python3-serial</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>so_arm101_description</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <test_depend>python3-pytest</test_depend>
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
